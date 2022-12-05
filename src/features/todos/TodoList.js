@@ -44,7 +44,6 @@ const TodoList = () => {
   if (isLoading) {
     content = <p>Loading...</p>;
   } else if (isSuccess) {
-    content = JSON.stringify(todos);
     content = todos.map((todo) => (
       <div key={todo.id} className="flex justify-between">
         <div>
